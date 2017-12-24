@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--开启注解处理器-->
+    <!--<context:annotation-config/>-->
+
+    <!-- 自动检测bean,启用spring mvc 注解@Autowired,@Resource,@Required等
+    <context:annotation-config /> 有了下面扫描配置后该项可以省掉-->
+    <context:component-scan base-package="com.community">
+        <!-- 排除不扫描的,controller放在子容器springmvc的配置文件中 -->
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+
+    <!--导入mongodb的配置文件-->
+    <import resource="mongodb-context.xml"/>
+
+    <!--仅用来测试springIoc是否成功-->
+    <!--<bean id="test" class="com.tl.skyLine.controller.TestSpringIocController">
+    </bean>-->
+</beans>
