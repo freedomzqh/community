@@ -19,7 +19,7 @@
   3. npm run dev
 
 后端：
-  1. clone community-ui代码   
+  1. clone community代码   
   
   2. 安装mongodb 数据库，配置数据源
   
