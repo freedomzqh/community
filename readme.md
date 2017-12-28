@@ -43,7 +43,14 @@
   6. 文章评论
   
   页面截图：
-  
+  ![image](https://github.com/freedomzqh/community/blob/master/screenshots/index2.PNG)
+  ![image](https://github.com/freedomzqh/community/blob/master/screenshots/write3.PNG)
+  ![image](https://github.com/freedomzqh/community/blob/master/screenshots/subject.PNG)
+  ![image](https://github.com/freedomzqh/community/blob/master/screenshots/login.PNG)
+  ![image](https://github.com/freedomzqh/community/blob/master/screenshots/register.PNG)
+  ![image](https://github.com/freedomzqh/community/blob/master/screenshots/topic3.PNG)
+   ![image](https://github.com/freedomzqh/community/blob/master/screenshots/person.PNG)
+   ![image](https://github.com/freedomzqh/community/blob/master/screenshots/commed.PNG)
  # 接口说明 
  
     保证前后端一直 即可
